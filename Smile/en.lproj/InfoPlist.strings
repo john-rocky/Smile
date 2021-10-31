@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Smile
+
+  Created by 間嶋大輔 on 2020/02/03.
+  Copyright © 2020 daisuke. All rights reserved.
+*/
+NSPhotoLibraryAddUsageDescription = "Allow them to be added to your photo library. This allows the app to save the front camera image, including the AR content, to your device's library.";
+NSCameraUsageDescription = "Please allow access to the camera. This allows the app to use the image from the front camera to determine a smile. In addition, AR content and front camera images can be combined.";
+

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6S-Sg-yn9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </sceneKitView>
+                    <navigationItem key="navigationItem" id="f3X-6d-1zP"/>
+                    <connections>
+                        <segue destination="t5d-FB-kU6" kind="show" identifier="ShowCamera" id="xdw-gG-QWZ"/>
+                        <segue destination="aRE-xH-Foc" kind="show" identifier="ShowFaceGame" id="1Mc-RU-O1d"/>
+                        <segue destination="5g9-B9-m80" kind="show" identifier="ShowRandomCamera" id="ILM-Af-1F5"/>
+                        <segue destination="qnm-5L-NJY" kind="show" identifier="ShowPenguinCamera" id="RKi-Y4-2p3"/>
+                        <segue destination="KfW-h5-vfg" kind="show" identifier="ShowExternalCamera" id="MWo-rv-igN"/>
+                        <segue destination="cuA-k6-w6J" kind="show" identifier="ShowFishCamera" id="SXk-os-0SI"/>
+                        <segue destination="mjP-YV-RKo" kind="show" identifier="InitialTerm" id="XPZ-Mr-auc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UH5-Vn-ybF">
+            <objects>
+                <viewController id="t5d-FB-kU6" customClass="ViewController" customModule="Smile" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w1k-ar-pc1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="652-f3-DSL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="652-f3-DSL" firstAttribute="top" secondItem="w1k-ar-pc1" secondAttribute="top" id="X3c-8u-MKe"/>
+                            <constraint firstAttribute="trailing" secondItem="652-f3-DSL" secondAttribute="trailing" id="YbH-ER-Moq"/>
+                            <constraint firstAttribute="bottom" secondItem="652-f3-DSL" secondAttribute="bottom" id="eG7-hR-Wm1"/>
+                            <constraint firstItem="652-f3-DSL" firstAttribute="leading" secondItem="uvK-ar-2Q2" secondAttribute="leading" id="h3a-X7-PKQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uvK-ar-2Q2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dLp-dq-1Kp"/>
+                    <connections>
+                        <outlet property="sceneView" destination="652-f3-DSL" id="0Ry-Td-59o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSl-ql-NHn" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="-983"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6X9-Wo-C41">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T6S-Sg-yn9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GwD-eR-chB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="erC-1G-ccn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h73-1n-TYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Face Game View Controller-->
+        <scene sceneID="W9l-cq-GmI">
+            <objects>
+                <viewController id="aRE-xH-Foc" customClass="FaceGameViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T2H-8g-Bmu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtU-1O-PMe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jtU-1O-PMe" secondAttribute="trailing" id="9It-pK-7OC"/>
+                            <constraint firstItem="jtU-1O-PMe" firstAttribute="leading" secondItem="YNq-7i-3Qt" secondAttribute="leading" id="K84-Bb-ESq"/>
+                            <constraint firstAttribute="bottom" secondItem="jtU-1O-PMe" secondAttribute="bottom" id="SFi-3H-xoX"/>
+                            <constraint firstItem="jtU-1O-PMe" firstAttribute="top" secondItem="T2H-8g-Bmu" secondAttribute="top" id="zOm-zk-rCj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YNq-7i-3Qt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wqq-ka-i9K"/>
+                    <connections>
+                        <outlet property="sceneView" destination="jtU-1O-PMe" id="RYO-na-a2m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3G1-yJ-peh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="-1665"/>
+        </scene>
+        <!--Random Camera View Controller-->
+        <scene sceneID="V4t-Jx-qK3">
+            <objects>
+                <viewController id="5g9-B9-m80" customClass="RandomCameraViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J8h-Ys-bnD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-J6-GDl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uBC-J6-GDl" secondAttribute="trailing" id="9oR-uk-TJT"/>
+                            <constraint firstAttribute="bottom" secondItem="uBC-J6-GDl" secondAttribute="bottom" id="fXU-3V-7fK"/>
+                            <constraint firstItem="uBC-J6-GDl" firstAttribute="top" secondItem="J8h-Ys-bnD" secondAttribute="top" id="sYn-Da-05t"/>
+                            <constraint firstItem="uBC-J6-GDl" firstAttribute="leading" secondItem="wao-IC-VvV" secondAttribute="leading" id="tWx-Ns-Mq2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wao-IC-VvV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lPL-F1-IX1"/>
+                    <connections>
+                        <outlet property="sceneView" destination="uBC-J6-GDl" id="VGc-FH-7Br"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egF-96-PoK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="-311"/>
+        </scene>
+        <!--External Camera View Controller-->
+        <scene sceneID="OpZ-vj-KZ1">
+            <objects>
+                <viewController id="KfW-h5-vfg" customClass="ExternalCameraViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rSo-SC-6A8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHi-Ri-46c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iHi-Ri-46c" firstAttribute="top" secondItem="rSo-SC-6A8" secondAttribute="top" id="Lch-e7-Pka"/>
+                            <constraint firstAttribute="bottom" secondItem="iHi-Ri-46c" secondAttribute="bottom" id="mG8-NA-oRd"/>
+                            <constraint firstAttribute="trailing" secondItem="iHi-Ri-46c" secondAttribute="trailing" id="mX6-ow-Ufg"/>
+                            <constraint firstItem="iHi-Ri-46c" firstAttribute="leading" secondItem="QbU-iF-ACk" secondAttribute="leading" id="y52-a3-22R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QbU-iF-ACk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iwh-X9-mDp"/>
+                    <connections>
+                        <outlet property="sceneView" destination="iHi-Ri-46c" id="woe-Ry-YWy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VeN-Ob-UyB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="1054"/>
+        </scene>
+        <!--Fish Camera View Controller-->
+        <scene sceneID="KOg-Gm-qNU">
+            <objects>
+                <viewController id="cuA-k6-w6J" customClass="FishCameraViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v08-Ef-0yp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wni-iu-MF6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wni-iu-MF6" firstAttribute="leading" secondItem="Ef6-Pp-yjy" secondAttribute="leading" id="1Qw-dK-aQE"/>
+                            <constraint firstAttribute="trailing" secondItem="wni-iu-MF6" secondAttribute="trailing" id="YBz-Uk-ckx"/>
+                            <constraint firstItem="wni-iu-MF6" firstAttribute="top" secondItem="v08-Ef-0yp" secondAttribute="top" id="ZlF-4Q-bUh"/>
+                            <constraint firstAttribute="bottom" secondItem="wni-iu-MF6" secondAttribute="bottom" id="kKy-df-5Ll"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ef6-Pp-yjy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eTn-7n-CBx"/>
+                    <connections>
+                        <outlet property="sceneView" destination="wni-iu-MF6" id="x4A-SC-Xsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCW-iv-3HX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="1704"/>
+        </scene>
+        <!--Penguin Camera View Controller-->
+        <scene sceneID="XpW-JZ-H5P">
+            <objects>
+                <viewController id="qnm-5L-NJY" customClass="PenguinCameraViewController" customModule="Smile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HSR-aq-QFY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19F-wZ-CG5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="19F-wZ-CG5" firstAttribute="leading" secondItem="U9z-kl-IbF" secondAttribute="leading" id="3pb-ec-dbk"/>
+                            <constraint firstItem="19F-wZ-CG5" firstAttribute="top" secondItem="HSR-aq-QFY" secondAttribute="top" id="LOp-jd-kvx"/>
+                            <constraint firstAttribute="trailing" secondItem="19F-wZ-CG5" secondAttribute="trailing" id="ShI-u0-sdO"/>
+                            <constraint firstAttribute="bottom" secondItem="19F-wZ-CG5" secondAttribute="bottom" id="k5a-IH-Tt2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U9z-kl-IbF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6zn-k1-L1s"/>
+                    <connections>
+                        <outlet property="sceneView" destination="19F-wZ-CG5" id="Vtq-3O-hPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZy-ys-1M4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="369"/>
+        </scene>
+        <!--Initial Term View Controller-->
+        <scene sceneID="3Dq-0E-Xo8">
+            <objects>
+                <viewController storyboardIdentifier="InitialTerm" id="mjP-YV-RKo" customClass="InitialTermViewController" customModule="Smile" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="20e-oQ-BaD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="利用規約" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTz-do-sQF">
+                                <rect key="frame" x="20" y="96" width="374" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mii-i6-ibv">
+                                <rect key="frame" x="20" y="179" width="374" height="645"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tcF-HN-2mj">
+                                    <size key="itemSize" width="373" height="564"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="othersCell" id="c4U-PV-pGk" customClass="TextCollectionViewCell" customModule="Smile" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="0.0" width="373" height="564"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="n3U-vB-6kY">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="564"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="373" height="564"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-Q9-903">
+                                <rect key="frame" x="76.5" y="832" width="261" height="30"/>
+                                <state key="normal" title="利用規約に同意してアプリを利用する"/>
+                                <connections>
+                                    <action selector="AgreeButton:" destination="mjP-YV-RKo" eventType="touchUpInside" id="9oD-Q4-1Wl"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="gxZ-xd-rKa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下記利用規約に同意いただいてからご利用ください。" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXm-vU-suv">
+                                <rect key="frame" x="20" y="130" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="v10-PW-TWO" firstAttribute="trailing" secondItem="Mii-i6-ibv" secondAttribute="trailing" constant="20" id="9ao-s7-T4D"/>
+                            <constraint firstItem="HXm-vU-suv" firstAttribute="top" secondItem="vTz-do-sQF" secondAttribute="bottom" constant="8" id="Cau-bv-Kpe"/>
+                            <constraint firstItem="Mii-i6-ibv" firstAttribute="leading" secondItem="v10-PW-TWO" secondAttribute="leading" constant="20" id="KHZ-gJ-Sew"/>
+                            <constraint firstItem="vTz-do-sQF" firstAttribute="top" secondItem="v10-PW-TWO" secondAttribute="top" constant="8" id="TSy-Pc-8kf"/>
+                            <constraint firstItem="uN7-Q9-903" firstAttribute="top" secondItem="Mii-i6-ibv" secondAttribute="bottom" constant="8" id="Z9G-CP-Tbd"/>
+                            <constraint firstItem="Mii-i6-ibv" firstAttribute="top" secondItem="HXm-vU-suv" secondAttribute="bottom" constant="8" id="ZXW-iY-bxD"/>
+                            <constraint firstItem="v10-PW-TWO" firstAttribute="trailing" secondItem="HXm-vU-suv" secondAttribute="trailing" constant="20" id="c8E-BK-Irw"/>
+                            <constraint firstItem="v10-PW-TWO" firstAttribute="bottom" secondItem="uN7-Q9-903" secondAttribute="bottom" id="cpp-Xj-YOm"/>
+                            <constraint firstItem="HXm-vU-suv" firstAttribute="leading" secondItem="v10-PW-TWO" secondAttribute="leading" constant="20" id="d97-id-Pp0"/>
+                            <constraint firstItem="HXm-vU-suv" firstAttribute="top" secondItem="vTz-do-sQF" secondAttribute="bottom" constant="8" id="eDR-SC-vXr"/>
+                            <constraint firstItem="uN7-Q9-903" firstAttribute="centerX" secondItem="v10-PW-TWO" secondAttribute="centerX" id="j0G-K3-h1P"/>
+                            <constraint firstItem="v10-PW-TWO" firstAttribute="trailing" secondItem="vTz-do-sQF" secondAttribute="trailing" constant="20" id="u3u-aG-VyZ"/>
+                            <constraint firstItem="vTz-do-sQF" firstAttribute="leading" secondItem="v10-PW-TWO" secondAttribute="leading" constant="20" id="xj2-JK-IK2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v10-PW-TWO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EN0-B8-w1o"/>
+                    <connections>
+                        <outlet property="AgreeButton" destination="uN7-Q9-903" id="avv-Q4-lh1"/>
+                        <outlet property="StatementLabel" destination="HXm-vU-suv" id="Zdw-Ke-iRY"/>
+                        <outlet property="TitleLabel" destination="vTz-do-sQF" id="avm-kg-C2t"/>
+                        <outlet property="collectionView" destination="Mii-i6-ibv" id="btz-gV-yr6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1u-LU-HWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-579"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="erC-1G-ccn"/>
+    </inferredMetricsTieBreakers>
+</document>

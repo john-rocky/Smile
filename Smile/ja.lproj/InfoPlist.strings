@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Smile
+
+  Created by 間嶋大輔 on 2020/02/03.
+  Copyright © 2020 daisuke. All rights reserved.
+*/
+NSPhotoLibraryAddUsageDescription = "フォトライブラリへの追加を許可してください。これにより、アプリはARコンテンツを含むフロントカメラ画像をご利用端末のライブラリに保存できます。";
+NSCameraUsageDescription = "カメラへのアクセスを許可してください。これにより、アプリはフロントカメラの画像を利用して笑顔を判定できます。また、ARコンテンツとフロントカメラ画像を合成できます。";
+

@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Smile
+
+  Created by 間嶋大輔 on 2020/02/03.
+  Copyright © 2020 daisuke. All rights reserved.
+*/
+NSPhotoLibraryAddUsageDescription = "允许将它们添加到您的照片库。 这样，应用程序便可以将前置摄像头图像（包括AR内容）保存到设备的媒体库中。";
+NSCameraUsageDescription = "请允许访问相机。 这允许该应用使用前置摄像头中的图像来确定微笑。 此外，AR内容和前置摄像头图像可以组合在一起。";
+CFBundleDisplayName = "笑一笑";

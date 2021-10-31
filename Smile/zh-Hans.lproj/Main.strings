@@ -1,0 +1,12 @@
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "51T-Df-PLE"; */
+"51T-Df-PLE.title" = "Item";
+
+/* Class = "UILabel"; text = "下記利用規約に同意いただいてからご利用ください。"; ObjectID = "HXm-vU-suv"; */
+"HXm-vU-suv.text" = "下記利用規約に同意いただいてからご利用ください。";
+
+/* Class = "UIButton"; normalTitle = "利用規約に同意してアプリを利用する"; ObjectID = "uN7-Q9-903"; */
+"uN7-Q9-903.normalTitle" = "利用規約に同意してアプリを利用する";
+
+/* Class = "UILabel"; text = "利用規約"; ObjectID = "vTz-do-sQF"; */
+"vTz-do-sQF.text" = "利用規約";
